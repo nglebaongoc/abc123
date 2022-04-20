@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Edit Product</h1>
+    <form action="/edit" method="post">
+    <input type="hidden" name="id" value="{{product._id}}">
+    Name: <input type="text" name="txtName" value="{{product.name}}">
+    <br>
+    Price: <input type="text" name="txtPrice" value="{{product.price}}">
+    <br>
+    PictureURL 
+     <div>
+                <img src="{{product.picURL}}" width="400" height="250"/>
+    </div>
+    <input type="text" name="txtPic" size="100">
+    <br>
+    <input type="submit" value="EDIT">
+    
+</body>
+
+<style>
+h1{
+    text-align: center;
+    background: rgb(15, 15, 15);
+    padding: 10px;
+    color: rgb(250, 249, 249);
+    font-size: 40px;
+}
+</style>
+</html>
