@@ -80,4 +80,4 @@ mongoose.connect(mongoDB, { useNewUrlParser: true , useUnifiedTopology: true});
 const PORT = process.env.PORT || 5000
 
 app.listen(PORT)
-console.log("Server is running!")
+console.log("Server is running!" +PORT)
